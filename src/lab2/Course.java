@@ -1,3 +1,5 @@
+package lab2;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +11,12 @@
  * @author Tyler
  */
 public interface Course {
-    public String setCourseName();
+    public void setCourseName(String courseName);
     public String getCourseName();
-    public String setCourseNumber();
+    public void setCourseNumber(String courseNumber);
     public String getCourseNumber();
-    public double setCredits();
+    public void setCredits(int credits);
     public double getCredits();
-    public String setPrerequisites();
+    public void setPrerequisites(String prerequisites);
     public String getPrerequisites();
 }
