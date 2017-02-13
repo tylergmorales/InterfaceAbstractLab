@@ -9,19 +9,24 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends Course{
+    
+    private String courseName;
+    private String courseNumber;
+    private double credits;
+    private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
-        super.setCourseName(courseName);
-        super.setCourseNumber(courseNumber);
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
     }
 
     public String getCapitalizedCourseName() {
-        return super.getCourseName().toUpperCase();
+        return courseName.toUpperCase();
     }
 
 
     public String getPrerequisites() {
-        return super.getPrerequisites();
+        return this.prerequisites;
     }
 
     public void setPrerequisites(String prerequisites) {
@@ -30,7 +35,7 @@ public class AdvancedJavaCourse extends Course{
                     "Error: prerequisites cannot be null of empty string");
             System.exit(0);
         }
-        super.setPrerequisites(prerequisites);
+        this.prerequisites = prerequisites;
     }
 
     public void setCredits(double credits) {
@@ -39,23 +44,23 @@ public class AdvancedJavaCourse extends Course{
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        super.setCredits(credits);
+        this.credits = credits;
     }
 
     public String getCourseName() {
-        return super.getCourseName();
+        return courseName;
     }
 
     public void setCourseName(String courseName) {
-        super.setCourseName(courseName);
+        this.courseName = courseName;
     }
 
     public String getCourseNumber() {
-        return super.getCourseNumber();
+        return courseNumber;
     }
 
     public void setCourseNumber(String courseNumber) {
-        super.setCourseNumber(courseNumber);
+        this.courseNumber = courseNumber;
     }
     
 }
