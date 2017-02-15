@@ -17,10 +17,10 @@ public class AdvancedJavaCourse implements ITCourse {
     Output2 output = new Output2();
 
     public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-        this.credits = credits;
-        this.prerequisites = prerequisites;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setCredits(credits);
+        this.setPrerequisites(prerequisites);
     }
 
     @Override

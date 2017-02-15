@@ -17,9 +17,9 @@ public class IntroToProgrammingCourse implements ITCourse {
     private Output2 output = new Output2();
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-        this.credits = credits;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setCredits(credits);
         this.prerequisites = "NONE";
     }
 
