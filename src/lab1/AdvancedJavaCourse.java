@@ -8,13 +8,19 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse extends ITCourses{
+public class AdvancedJavaCourse extends ITCourse{
 
     public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
         this.setCredits(credits);
         this.setPrerequisites(prerequisites);
+    }
+    
+    @Override
+    public String toString()
+    {
+        return "Class Name: " + this.getCourseName() + "\nCourse Number: " + this.getCourseNumber() + "\nCourse Credits: " + this.getCredits() + "\nCourse Prerequisites: " + this.getPrerequisites() + "\n";
     }
     
 }

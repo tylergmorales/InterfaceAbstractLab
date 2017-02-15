@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends ITCourses{
+public class IntroToProgrammingCourse extends ITCourse{
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
         this.setCourseName(courseName);
@@ -18,5 +18,9 @@ public class IntroToProgrammingCourse extends ITCourses{
         this.setPrerequisites("NONE");
     }
 
-    
+    @Override
+    public String toString()
+    {
+        return "Class Name: " + this.getCourseName() + "\nCourse Number: " + this.getCourseNumber() + "\nCourse Credits: " + this.getCredits() + "\nCourse Prerequisites: " + this.getPrerequisites() + "\n";
+    }
 }

@@ -10,13 +10,11 @@ package lab2;
  *
  * @author Tyler
  */
-public interface Course {
+public interface ITCourse {
     public void setCourseName(String courseName);
     public String getCourseName();
     public void setCourseNumber(String courseNumber);
     public String getCourseNumber();
-    public void setCredits(int credits);
+    public void setCredits(double credits);
     public double getCredits();
-    public void setPrerequisites(String prerequisites);
-    public String getPrerequisites();
 }

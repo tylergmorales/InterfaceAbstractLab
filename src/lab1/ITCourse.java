@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Tyler
  */
-public abstract class ITCourses {
+public abstract class ITCourse {
     private String courseName;
     private String courseNumber;
     private double credits;

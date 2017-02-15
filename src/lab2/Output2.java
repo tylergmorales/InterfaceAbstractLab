@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab1;
+package lab2;
 
 /**
  *
  * @author TMorales3
  */
-public class Output {
-    public Output(){
+public class Output2 {
+    public Output2(){
     }
     
     public String creditRangeError()
@@ -33,3 +33,4 @@ public class Output {
         return "Error: courseName cannot be null of empty string";
     }
 }
+
