@@ -19,7 +19,7 @@ public abstract class ITCourses {
     
     Output output = new Output();
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
     
@@ -36,7 +36,7 @@ public abstract class ITCourses {
         this.courseName = courseName;
     }
 
-    public String getCourseNumber(){
+    public final String getCourseNumber(){
         return courseNumber;
     }
 
@@ -49,7 +49,7 @@ public abstract class ITCourses {
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits(){
+    public final double getCredits(){
         return credits;
     }
 
@@ -63,7 +63,7 @@ public abstract class ITCourses {
     }
             
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 
