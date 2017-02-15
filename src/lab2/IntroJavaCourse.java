@@ -13,8 +13,9 @@ public class IntroJavaCourse implements ITCourse {
     private String courseNumber;
     private double credits;
     private String prerequisites;
-    
-    Output2 output = new Output2();
+    private Output2 output = new Output2(); 
+    private College college2 = new College();
+
 
     public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.setCourseName(courseName);
@@ -59,7 +60,7 @@ public class IntroJavaCourse implements ITCourse {
     }
 
     public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
+        if(credits < college2.getMinCredits() || credits > college2.getMaxCredits()) {
             JOptionPane.showMessageDialog(null,
                     output.creditRangeError());
             System.exit(0);

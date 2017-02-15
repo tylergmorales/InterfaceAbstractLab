@@ -16,8 +16,9 @@ public abstract class ITCourse {
     private String courseNumber;
     private double credits;
     private String prerequisites;
+    private Output output = new Output();
+    private College college1 = new College();
     
-    Output output = new Output();
 
     public final String getCourseName() {
         return courseName;
@@ -54,7 +55,7 @@ public abstract class ITCourse {
     }
 
     public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
+        if(credits < college1.getMinCredits() || credits > college1.getMaxCredits()) {
             JOptionPane.showMessageDialog(null,
                     output.creditRangeError());
             System.exit(0);
