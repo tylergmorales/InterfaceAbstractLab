@@ -15,21 +15,21 @@ public class Output {
     
     public String creditRangeError()
     {
-        return "Error: credits must be in the range 0.5 to 4.0";
+        return "Error: Credits must be in the range 0.5 to 4.0";
     }
     
     public String prerequisiteNullError()
     {
-        return "Error: prerequisites cannot be null of empty string";
+        return "Error: Prerequisites cannot be null or empty string";
     }
     
     public String courseNumberNullError()
     {
-        return "Error: courseNumber cannot be null of empty string";
+        return "Error: Course Number cannot be null or empty string";
     }
     
     public String courseNameNullError()
     {
-        return "Error: courseName cannot be null of empty string";
+        return "Error: Course Name cannot be null or empty string";
     }
 }
