@@ -16,8 +16,8 @@ public abstract class ITCourse {
     private String courseNumber;
     private double credits;
     private String prerequisites;
-    private Output output = new Output();
-    private College college1 = new College();
+    private final Output output = new Output();
+    private final College college1 = new College();
     
 
     public final String getCourseName() {
